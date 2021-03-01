@@ -1,0 +1,55 @@
+::-webkit-scrollbar {
+    width: 10px; 
+    height: 4px; 
+    background-color: #4e4e4e;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #585858;
+}
+
+.content{
+    margin: 0 auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    text-align:center;
+    width: 90%;
+}
+
+textarea{
+    margin: 20px ;
+    color:black;
+    width: 30%;
+    height: 400px;
+}
+
+.decryptButton{
+    margin: 40px;
+}
+
+.decryptButton {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: .5em 2em;
+        outline: none;
+        border-width: 2px 0;
+        border-style: solid none;
+        border-color: #FDBE33 #000 #D77206;
+        border-radius: 6px;
+        background: linear-gradient(#F3AE0F, #E38916) #E38916;
+        transition: 0.2s;
+      } 
+.decryptButton:hover {
+    background: linear-gradient(#f5ae00, #f59500) #f5ae00;
+    cursor: pointer;
+}
+.decryptButton:active {
+    background: linear-gradient(#f59500, #f5ae00) #f59500;
+}
