@@ -4,14 +4,13 @@ const decryptButton = document.querySelector(".decryptButton");
 const edwardDecrypt = () => {
     const message = document.querySelector(".message").value.split("");
     let counter = "";
-   let result = message.map((item, index) => {
-        if (item === message[index - 1] && item === message[index + 1]) {
-            if (item !== counter) {
-                counter = item;
-                return item
-            }
-            counter = item;
-        } else if (item !== message[index - 1] && item !== message[index + 1]) {
+    let result = message.map((item, index) => {
+        if (item === message[index+1]){
+            counter++
+        } else if (item !== message[index+1] && 
+            counter%2 !== 0){
+                counter = 0;
+        }else {
             return item
         }
     });
